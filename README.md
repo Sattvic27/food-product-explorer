@@ -198,22 +198,19 @@ The UI is designed to feel fast, familiar, and commerce-ready.
 
 ### Product Detail Page
 
-![Detail](<img width="1920" height="1080" alt="Screenshot (596)" src="https://github.com/user-attachments/assets/722d5640-758a-4ab5-8d46-4884678ccc8d" />
-)
+![Detail](<img width="1920" height="1080" alt="Screenshot (596)" src="https://github.com/user-attachments/assets/722d5640-758a-4ab5-8d46-4884678ccc8d" />)
 
 ---
 
 ### Search Functionality
 
-![Search](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f49ad16a-b97c-46eb-b403-cc488f8e64c7" />
-)
+![Search](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f49ad16a-b97c-46eb-b403-cc488f8e64c7" />)
 
 ---
 
 ### Cart Page
 
-![Cart](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcc34cfb-b8ac-4d68-a59f-ecd9558a8575" />
-)
+![Cart](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcc34cfb-b8ac-4d68-a59f-ecd9558a8575" />)
 
 ---
 
