@@ -191,25 +191,29 @@ The UI is designed to feel fast, familiar, and commerce-ready.
 
 ### Home Page
 
-![Home](./screenshots/home.png)
+![Home](./<img width="1920" height="1080" alt="Screenshot (595)" src="https://github.com/user-attachments/assets/f10fefbc-b3f7-4b71-9f8a-cdcad7874af5" />
+)
 
 ---
 
 ### Product Detail Page
 
-![Detail](./screenshots/detail.png)
+![Detail](<img width="1920" height="1080" alt="Screenshot (596)" src="https://github.com/user-attachments/assets/722d5640-758a-4ab5-8d46-4884678ccc8d" />
+)
 
 ---
 
 ### Search Functionality
 
-![Search](./screenshots/search.png)
+![Search](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f49ad16a-b97c-46eb-b403-cc488f8e64c7" />
+)
 
 ---
 
 ### Cart Page
 
-![Cart](./screenshots/cart.png)
+![Cart](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcc34cfb-b8ac-4d68-a59f-ecd9558a8575" />
+)
 
 ---
 
