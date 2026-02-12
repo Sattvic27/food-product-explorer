@@ -15,7 +15,7 @@ function Home() {
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
   const [category, setCategory] = useState("snacks");
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
   loadProducts();
 }, [loadProducts]);

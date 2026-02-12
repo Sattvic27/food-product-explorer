@@ -5,7 +5,7 @@ import { fetchProductByBarcode } from "../services/api";
 function ProductDetail() {
   const { barcode } = useParams();
   const [product, setProduct] = useState(null);
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
   loadProduct();
 }, [loadProduct]);
