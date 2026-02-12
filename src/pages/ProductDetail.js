@@ -12,10 +12,10 @@ function ProductDetail() {
     setProduct(data);
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => {
-    loadProduct();
-  }, [barcode]);
+// eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  loadProduct();
+}, [barcode]);
 
   if (!product)
     return (

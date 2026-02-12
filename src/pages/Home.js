@@ -37,10 +37,10 @@ function Home() {
     }
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => {
-    loadProducts(1, true);
-  }, [category]);
+// eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  loadProducts(1, true);
+}, [category]);
 
   const fetchMore = () => {
     const nextPage = page + 1;
