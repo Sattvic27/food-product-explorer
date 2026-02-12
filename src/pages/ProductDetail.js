@@ -2,20 +2,27 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchProductByBarcode } from "../services/api";
 
-const loadProduct = async () => {
-  const data = await fetchProductByBarcode(barcode);
-  setProduct(data);
-};
 function ProductDetail() {
   const { barcode } = useParams();
   const [product, setProduct] = useState(null);
+
+  // ✅ FUNCTION INSIDE COMPONENT
+  const loadProduct = async () => {
+    const data = await fetchProductByBarcode(barcode);
+    setProduct(data);
+  };
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-  loadProduct();
-}, [loadProduct]);
+    loadProduct();
+  }, [barcode]);
 
-
-  if (!product) return <h2 style={{ padding: "20px" }}>Loading...</h2>;
+  if (!product)
+    return (
+      <h2 style={{ padding: "20px" }}>
+        Loading...
+      </h2>
+    );
 
   return (
     <div style={{ padding: "20px" }}>
@@ -28,16 +35,31 @@ function ProductDetail() {
       />
 
       <h3>Ingredients</h3>
-      <p>{product.ingredients_text || "No data"}</p>
+      <p>
+        {product.ingredients_text ||
+          "No data"}
+      </p>
 
       <h3>Nutrition</h3>
-      <p>Energy: {product.nutriments?.energy}</p>
-      <p>Fat: {product.nutriments?.fat}</p>
-      <p>Carbs: {product.nutriments?.carbohydrates}</p>
-      <p>Protein: {product.nutriments?.proteins}</p>
+      <p>
+        Energy: {product.nutriments?.energy}
+      </p>
+      <p>
+        Fat: {product.nutriments?.fat}
+      </p>
+      <p>
+        Carbs:{" "}
+        {product.nutriments?.carbohydrates}
+      </p>
+      <p>
+        Protein:{" "}
+        {product.nutriments?.proteins}
+      </p>
 
       <h3>Labels</h3>
-      <p>{product.labels || "No labels"}</p>
+      <p>
+        {product.labels || "No labels"}
+      </p>
     </div>
   );
 }
