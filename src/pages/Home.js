@@ -11,6 +11,25 @@ import SearchBar from "../components/SearchBar";
 import CategoryFilter from "../components/CategoryFilter";
 import SortDropdown from "../components/SortDropdown";
 
+const loadProducts = async (
+  pageNum,
+  reset = false
+) => {
+  const data =
+    await fetchProductsByCategory(
+      category,
+      pageNum
+    );
+
+  if (reset) {
+    setProducts(data);
+  } else {
+    setProducts((prev) => [
+      ...prev,
+      ...data,
+    ]);
+  }
+};
 function Home() {
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
@@ -20,25 +39,6 @@ function Home() {
   loadProducts();
 }, [loadProducts]);
 
-  const loadProducts = async (
-    pageNum,
-    reset = false
-  ) => {
-    const data =
-      await fetchProductsByCategory(
-        category,
-        pageNum
-      );
-
-    if (reset) {
-      setProducts(data);
-    } else {
-      setProducts((prev) => [
-        ...prev,
-        ...data,
-      ]);
-    }
-  };
 
   const fetchMore = () => {
     const nextPage = page + 1;

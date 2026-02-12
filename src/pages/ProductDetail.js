@@ -2,6 +2,10 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchProductByBarcode } from "../services/api";
 
+const loadProduct = async () => {
+  const data = await fetchProductByBarcode(barcode);
+  setProduct(data);
+};
 function ProductDetail() {
   const { barcode } = useParams();
   const [product, setProduct] = useState(null);
@@ -10,10 +14,6 @@ function ProductDetail() {
   loadProduct();
 }, [loadProduct]);
 
-  const loadProduct = async () => {
-    const data = await fetchProductByBarcode(barcode);
-    setProduct(data);
-  };
 
   if (!product) return <h2 style={{ padding: "20px" }}>Loading...</h2>;
 
