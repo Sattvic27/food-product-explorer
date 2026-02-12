@@ -1,70 +1,252 @@
-# Getting Started with Create React App
+# 🍔 Food Product Explorer — Advanced React Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern **API-powered food discovery and product exploration platform** built with **React.js**, designed to help users search, filter, and analyze food products with ease.
 
-## Available Scripts
+The application leverages the **OpenFoodFacts API** to provide real-time product data, enabling intelligent browsing through categories, nutrition grades, and detailed product insights — all within a clean, responsive UI.
 
-In the project directory, you can run:
+**Tagline:** *“Discover food. Decode nutrition. Explore smarter.”*
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌟 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* 🛍️ **Product Discovery**
 
-### `npm test`
+  * Browse food products by category
+  * Dynamic product grid layout
+  * Real-time API data rendering
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* 🔍 **Smart Search System**
 
-### `npm run build`
+  * Search products by name
+  * Barcode search support
+  * Instant navigation to product details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* 🗂️ **Category Filtering**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * Filter products by food categories
+  * Examples: Snacks, Beverages, Dairy, Chocolates
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* ↕️ **Advanced Sorting**
 
-### `npm run eject`
+  * Sort by product name (A → Z / Z → A)
+  * Sort by nutrition grade
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* 📄 **Detailed Product View**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * Product image
+  * Ingredients list
+  * Nutrition values
+  * Labels & grades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* ♾️ **Infinite Scroll Pagination**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  * Auto-load more products while scrolling
+  * Optimized API fetching
+  * Smooth browsing experience
 
-## Learn More
+* 🛒 **Cart System**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  * Add products to cart
+  * Remove items
+  * Global state via Context API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* 🌙 **Dark Mode Toggle**
 
-### Code Splitting
+  * User-controlled theme switching
+  * Improved visual accessibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🧠 Application Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The project follows a **scalable frontend architecture** with clear separation of concerns:
 
-### Making a Progressive Web App
+* Component-based UI
+* Centralized API service layer
+* Context-based global state
+* Modular page routing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Designed to reflect real-world production React apps.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🧱 Tech Stack
 
-### Deployment
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* **React.js**
+* **React Router DOM**
+* **Context API**
+* **Axios**
+* **CSS / Inline Styling**
 
-### `npm run build` fails to minify
+### API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **OpenFoodFacts REST API**
+
+### Tooling
+
+* Git & GitHub
+* ESLint
+* VS Code
+
+---
+
+## 📁 Project Structure
+
+```bash
+food-product-explorer/
+├── src/
+│ ├── components/
+│ │ ├── Navbar.js
+│ │ ├── ProductCard.js
+│ │ ├── SearchBar.js
+│ │ ├── CategoryFilter.js
+│ │ ├── SortDropdown.js
+│ │ └── Loader.js
+│ │
+│ ├── pages/
+│ │ ├── Home.js
+│ │ ├── ProductDetail.js
+│ │ └── Cart.js
+│ │
+│ ├── context/
+│ │ └── CartContext.js
+│ │
+│ ├── services/
+│ │ └── api.js
+│ │
+│ ├── styles/
+│ │ └── global.css
+│ │
+│ ├── App.js
+│ └── index.js
+│
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Sattvic27/food-product-explorer.git
+cd food-product-explorer
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run Development Server
+
+```bash
+npm start
+```
+
+App runs at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔌 API Integration
+
+Powered by **OpenFoodFacts API**
+
+### Sample Endpoints Used
+
+| Purpose           | Endpoint                             |
+| ----------------- | ------------------------------------ |
+| Category Products | `/category/{category}.json`          |
+| Search Products   | `/cgi/search.pl?search_terms={name}` |
+| Product Details   | `/api/v0/product/{barcode}.json`     |
+
+---
+
+## 🎨 UI / UX Principles
+
+* Clean product-focused layout
+* Grid-based browsing
+* Fast scroll loading
+* Minimal interaction friction
+* Responsive across devices
+
+The UI is designed to feel fast, familiar, and commerce-ready.
+
+---
+
+## 🧩 Screenshots
+
+*Note: Screenshots represent demo data fetched via API.*
+
+### Home Page
+
+![Home](./<img width="1920" height="1080" alt="Screenshot (595)" src="https://github.com/user-attachments/assets/f10fefbc-b3f7-4b71-9f8a-cdcad7874af5" />
+)
+
+---
+
+### Product Detail Page
+
+![Detail](./<img width="1920" height="1080" alt="Screenshot (596)" src="https://github.com/user-attachments/assets/722d5640-758a-4ab5-8d46-4884678ccc8d" />)
+
+---
+
+### Search Functionality
+
+![Search](./<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f49ad16a-b97c-46eb-b403-cc488f8e64c7" />)
+
+---
+
+### Cart Page
+
+![Cart](./<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcc34cfb-b8ac-4d68-a59f-ecd9558a8575" />)
+
+---
+
+## 🔮 Future Enhancements
+
+* AI nutrition insights
+* Product comparison tool
+* Wishlist system
+* User authentication
+* Cloud database sync
+* Progressive Web App (PWA)
+
+---
+
+## 👨‍💻 Developer
+
+**Satvik Nagare**
+Full-Stack Developer
+📍 India
+
+* GitHub: https://github.com/Sattvic27
+* Project: Food Product Explorer
+
+---
+
+## 📄 License
+
+Licensed under the **MIT License**
+
+---
+
+## 📝 Notes
+
+* Built as an internship assignment project
+* Demonstrates API integration & scalable React architecture
+* Focused on usability, performance, and modular design
+* Designed to reflect production-grade frontend engineering
+
+---

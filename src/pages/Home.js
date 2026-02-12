@@ -17,8 +17,8 @@ function Home() {
   const [category, setCategory] = useState("snacks");
 
   useEffect(() => {
-    loadProducts(1, true);
-  }, [category]);
+  loadProducts();
+}, [loadProducts]);
 
   const loadProducts = async (
     pageNum,

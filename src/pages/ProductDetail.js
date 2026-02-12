@@ -7,8 +7,8 @@ function ProductDetail() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    loadProduct();
-  }, []);
+  loadProduct();
+}, [loadProduct]);
 
   const loadProduct = async () => {
     const data = await fetchProductByBarcode(barcode);
